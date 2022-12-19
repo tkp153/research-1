@@ -1,0 +1,6 @@
+sensor_msgs/Image input_data
+int input_count
+---
+bool output_cut
+int output_count
+sensor_msgs/Image output_data

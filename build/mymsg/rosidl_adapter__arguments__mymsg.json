@@ -1,0 +1,7 @@
+{
+  "package_name": "mymsg",
+  "non_idl_tuples": [
+    "/root/research-1/src/mymsg:msg/Pose.msg",
+    "/root/research-1/src/mymsg:msg/Poses.msg"
+  ]
+}
