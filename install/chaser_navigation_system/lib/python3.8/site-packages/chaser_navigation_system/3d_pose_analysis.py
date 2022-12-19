@@ -39,7 +39,10 @@ class three_pose_analysis(Node):
         
         # Publisher 
         
-        #self.publisher = self.create_publisher(Poses,out_topic,1)
+        # 人の座標情報
+        self.pub_1 = self.create_publisher(MultiTransform,"/person_check",10)
+        #挙手された人の情報
+        self.pub_2 =self.create_publisher(Transform,"raise_hand_info",10)
         
     def three_pose_generator(self,depth,info,poses):
         

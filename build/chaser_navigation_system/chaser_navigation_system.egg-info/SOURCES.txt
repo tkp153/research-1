@@ -12,6 +12,7 @@ chaser_navigation_system/3d_pose_analysis.py
 chaser_navigation_system/__init__.py
 chaser_navigation_system/image_cutter.py
 chaser_navigation_system/image_inputer.py
+chaser_navigation_system/pose_tf2.py
 resource/chaser_navigation_system
 test/test_copyright.py
 test/test_flake8.py
