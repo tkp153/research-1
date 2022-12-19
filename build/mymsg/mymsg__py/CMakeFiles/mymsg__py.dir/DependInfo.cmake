@@ -8,10 +8,14 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_c.c" "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_introspection_c.c" "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/msg/__init__.py" "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/msg/_multi_transform.py" "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/msg/_multi_transform_s.c" "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/msg/_pose.py" "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/msg/_pose_s.c" "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/msg/_poses.py" "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/msg/_poses_s.c" "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/msg/_transform.py" "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/msg/_transform_s.c" "/root/research-1/build/mymsg/rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

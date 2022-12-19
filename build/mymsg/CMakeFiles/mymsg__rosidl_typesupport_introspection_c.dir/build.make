@@ -67,6 +67,8 @@ rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__rosidl_typesupport_int
 rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__rosidl_typesupport_introspection_c.h: rosidl_adapter/mymsg/msg/Pose.idl
 rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__rosidl_typesupport_introspection_c.h: rosidl_adapter/mymsg/msg/Poses.idl
+rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__rosidl_typesupport_introspection_c.h: rosidl_adapter/mymsg/msg/Transform.idl
+rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__rosidl_typesupport_introspection_c.h: rosidl_adapter/mymsg/msg/MultiTransform.idl
 rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
 rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Byte.idl
 rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl
@@ -145,11 +147,23 @@ rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__rosidl_typesupport_int
 rosidl_typesupport_introspection_c/mymsg/msg/detail/poses__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/mymsg/msg/detail/poses__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__rosidl_typesupport_introspection_c.h
+
+rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__type_support.c: rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__type_support.c
 
 rosidl_typesupport_introspection_c/mymsg/msg/detail/poses__type_support.c: rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/mymsg/msg/detail/poses__type_support.c
+
+rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__type_support.c: rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__type_support.c
+
+rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__type_support.c: rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__type_support.c
 
 CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__type_support.c.o: CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__type_support.c.o: rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__type_support.c
@@ -177,16 +191,46 @@ CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_intr
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/poses__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/research-1/build/mymsg/rosidl_typesupport_introspection_c/mymsg/msg/detail/poses__type_support.c -o CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/poses__type_support.c.s
 
+CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__type_support.c.o: CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__type_support.c.o: rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__type_support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__type_support.c.o   -c /root/research-1/build/mymsg/rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__type_support.c
+
+CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/research-1/build/mymsg/rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__type_support.c > CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__type_support.c.i
+
+CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/research-1/build/mymsg/rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__type_support.c -o CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__type_support.c.s
+
+CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__type_support.c.o: CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__type_support.c.o: rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__type_support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__type_support.c.o   -c /root/research-1/build/mymsg/rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__type_support.c
+
+CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/research-1/build/mymsg/rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__type_support.c > CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__type_support.c.i
+
+CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/research-1/build/mymsg/rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__type_support.c -o CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__type_support.c.s
+
 # Object files for target mymsg__rosidl_typesupport_introspection_c
 mymsg__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__type_support.c.o" \
-"CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/poses__type_support.c.o"
+"CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/poses__type_support.c.o" \
+"CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__type_support.c.o" \
+"CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__type_support.c.o"
 
 # External object files for target mymsg__rosidl_typesupport_introspection_c
 mymsg__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libmymsg__rosidl_typesupport_introspection_c.so: CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__type_support.c.o
 libmymsg__rosidl_typesupport_introspection_c.so: CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/poses__type_support.c.o
+libmymsg__rosidl_typesupport_introspection_c.so: CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__type_support.c.o
+libmymsg__rosidl_typesupport_introspection_c.so: CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__type_support.c.o
 libmymsg__rosidl_typesupport_introspection_c.so: CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/build.make
 libmymsg__rosidl_typesupport_introspection_c.so: libmymsg__rosidl_generator_c.so
 libmymsg__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/libvisualization_msgs__rosidl_typesupport_c.so
@@ -217,7 +261,7 @@ libmymsg__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librcpputils.
 libmymsg__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librosidl_runtime_c.so
 libmymsg__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librcutils.so
 libmymsg__rosidl_typesupport_introspection_c.so: CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libmymsg__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libmymsg__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -231,8 +275,12 @@ CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/clean:
 
 CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__rosidl_typesupport_introspection_c.h
 CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mymsg/msg/detail/poses__rosidl_typesupport_introspection_c.h
+CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__rosidl_typesupport_introspection_c.h
+CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__rosidl_typesupport_introspection_c.h
 CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mymsg/msg/detail/pose__type_support.c
 CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mymsg/msg/detail/poses__type_support.c
+CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mymsg/msg/detail/transform__type_support.c
+CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mymsg/msg/detail/multi_transform__type_support.c
 	cd /root/research-1/build/mymsg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/research-1/src/mymsg /root/research-1/src/mymsg /root/research-1/build/mymsg /root/research-1/build/mymsg /root/research-1/build/mymsg/CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/depend
 

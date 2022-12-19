@@ -228,3 +228,16 @@ class Image_Input(Node):
         msg.id = id
         
         self.publisher.publish(msg)
+        
+def main():
+    
+    rclpy.init()
+    
+    node = Image_Input()
+    
+    rclpy.spin(node)
+    
+    rclpy.shutdown()
+    
+if __name__ == "__main__":
+    main()

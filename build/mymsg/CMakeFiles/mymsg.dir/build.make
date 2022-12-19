@@ -55,6 +55,8 @@ include CMakeFiles/mymsg.dir/progress.make
 
 CMakeFiles/mymsg: /root/research-1/src/mymsg/msg/Pose.msg
 CMakeFiles/mymsg: /root/research-1/src/mymsg/msg/Poses.msg
+CMakeFiles/mymsg: /root/research-1/src/mymsg/msg/Transform.msg
+CMakeFiles/mymsg: /root/research-1/src/mymsg/msg/MultiTransform.msg
 CMakeFiles/mymsg: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
 CMakeFiles/mymsg: /opt/ros/foxy/share/std_msgs/msg/Byte.idl
 CMakeFiles/mymsg: /opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl

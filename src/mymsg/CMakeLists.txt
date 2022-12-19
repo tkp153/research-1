@@ -29,6 +29,8 @@ find_package(visualization_msgs REQUIRED)
 set(msg_files
 "msg/Pose.msg"
 "msg/Poses.msg"
+"msg/Transform.msg"
+"msg/MultiTransform.msg"
 )
 
 set(srv_files

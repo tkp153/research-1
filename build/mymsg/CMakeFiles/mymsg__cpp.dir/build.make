@@ -61,6 +61,14 @@ CMakeFiles/mymsg__cpp: rosidl_generator_cpp/mymsg/msg/poses.hpp
 CMakeFiles/mymsg__cpp: rosidl_generator_cpp/mymsg/msg/detail/poses__builder.hpp
 CMakeFiles/mymsg__cpp: rosidl_generator_cpp/mymsg/msg/detail/poses__struct.hpp
 CMakeFiles/mymsg__cpp: rosidl_generator_cpp/mymsg/msg/detail/poses__traits.hpp
+CMakeFiles/mymsg__cpp: rosidl_generator_cpp/mymsg/msg/transform.hpp
+CMakeFiles/mymsg__cpp: rosidl_generator_cpp/mymsg/msg/detail/transform__builder.hpp
+CMakeFiles/mymsg__cpp: rosidl_generator_cpp/mymsg/msg/detail/transform__struct.hpp
+CMakeFiles/mymsg__cpp: rosidl_generator_cpp/mymsg/msg/detail/transform__traits.hpp
+CMakeFiles/mymsg__cpp: rosidl_generator_cpp/mymsg/msg/multi_transform.hpp
+CMakeFiles/mymsg__cpp: rosidl_generator_cpp/mymsg/msg/detail/multi_transform__builder.hpp
+CMakeFiles/mymsg__cpp: rosidl_generator_cpp/mymsg/msg/detail/multi_transform__struct.hpp
+CMakeFiles/mymsg__cpp: rosidl_generator_cpp/mymsg/msg/detail/multi_transform__traits.hpp
 
 
 rosidl_generator_cpp/mymsg/msg/pose.hpp: /opt/ros/foxy/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -80,6 +88,8 @@ rosidl_generator_cpp/mymsg/msg/pose.hpp: /opt/ros/foxy/share/rosidl_generator_cp
 rosidl_generator_cpp/mymsg/msg/pose.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/mymsg/msg/pose.hpp: rosidl_adapter/mymsg/msg/Pose.idl
 rosidl_generator_cpp/mymsg/msg/pose.hpp: rosidl_adapter/mymsg/msg/Poses.idl
+rosidl_generator_cpp/mymsg/msg/pose.hpp: rosidl_adapter/mymsg/msg/Transform.idl
+rosidl_generator_cpp/mymsg/msg/pose.hpp: rosidl_adapter/mymsg/msg/MultiTransform.idl
 rosidl_generator_cpp/mymsg/msg/pose.hpp: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
 rosidl_generator_cpp/mymsg/msg/pose.hpp: /opt/ros/foxy/share/std_msgs/msg/Byte.idl
 rosidl_generator_cpp/mymsg/msg/pose.hpp: /opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl
@@ -176,6 +186,30 @@ rosidl_generator_cpp/mymsg/msg/detail/poses__struct.hpp: rosidl_generator_cpp/my
 rosidl_generator_cpp/mymsg/msg/detail/poses__traits.hpp: rosidl_generator_cpp/mymsg/msg/pose.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mymsg/msg/detail/poses__traits.hpp
 
+rosidl_generator_cpp/mymsg/msg/transform.hpp: rosidl_generator_cpp/mymsg/msg/pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mymsg/msg/transform.hpp
+
+rosidl_generator_cpp/mymsg/msg/detail/transform__builder.hpp: rosidl_generator_cpp/mymsg/msg/pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mymsg/msg/detail/transform__builder.hpp
+
+rosidl_generator_cpp/mymsg/msg/detail/transform__struct.hpp: rosidl_generator_cpp/mymsg/msg/pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mymsg/msg/detail/transform__struct.hpp
+
+rosidl_generator_cpp/mymsg/msg/detail/transform__traits.hpp: rosidl_generator_cpp/mymsg/msg/pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mymsg/msg/detail/transform__traits.hpp
+
+rosidl_generator_cpp/mymsg/msg/multi_transform.hpp: rosidl_generator_cpp/mymsg/msg/pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mymsg/msg/multi_transform.hpp
+
+rosidl_generator_cpp/mymsg/msg/detail/multi_transform__builder.hpp: rosidl_generator_cpp/mymsg/msg/pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mymsg/msg/detail/multi_transform__builder.hpp
+
+rosidl_generator_cpp/mymsg/msg/detail/multi_transform__struct.hpp: rosidl_generator_cpp/mymsg/msg/pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mymsg/msg/detail/multi_transform__struct.hpp
+
+rosidl_generator_cpp/mymsg/msg/detail/multi_transform__traits.hpp: rosidl_generator_cpp/mymsg/msg/pose.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mymsg/msg/detail/multi_transform__traits.hpp
+
 mymsg__cpp: CMakeFiles/mymsg__cpp
 mymsg__cpp: rosidl_generator_cpp/mymsg/msg/pose.hpp
 mymsg__cpp: rosidl_generator_cpp/mymsg/msg/detail/pose__builder.hpp
@@ -185,6 +219,14 @@ mymsg__cpp: rosidl_generator_cpp/mymsg/msg/poses.hpp
 mymsg__cpp: rosidl_generator_cpp/mymsg/msg/detail/poses__builder.hpp
 mymsg__cpp: rosidl_generator_cpp/mymsg/msg/detail/poses__struct.hpp
 mymsg__cpp: rosidl_generator_cpp/mymsg/msg/detail/poses__traits.hpp
+mymsg__cpp: rosidl_generator_cpp/mymsg/msg/transform.hpp
+mymsg__cpp: rosidl_generator_cpp/mymsg/msg/detail/transform__builder.hpp
+mymsg__cpp: rosidl_generator_cpp/mymsg/msg/detail/transform__struct.hpp
+mymsg__cpp: rosidl_generator_cpp/mymsg/msg/detail/transform__traits.hpp
+mymsg__cpp: rosidl_generator_cpp/mymsg/msg/multi_transform.hpp
+mymsg__cpp: rosidl_generator_cpp/mymsg/msg/detail/multi_transform__builder.hpp
+mymsg__cpp: rosidl_generator_cpp/mymsg/msg/detail/multi_transform__struct.hpp
+mymsg__cpp: rosidl_generator_cpp/mymsg/msg/detail/multi_transform__traits.hpp
 mymsg__cpp: CMakeFiles/mymsg__cpp.dir/build.make
 
 .PHONY : mymsg__cpp

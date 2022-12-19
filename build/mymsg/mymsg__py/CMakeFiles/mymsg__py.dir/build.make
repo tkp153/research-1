@@ -58,9 +58,13 @@ mymsg__py/CMakeFiles/mymsg__py: rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typ
 mymsg__py/CMakeFiles/mymsg__py: rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_c.c
 mymsg__py/CMakeFiles/mymsg__py: rosidl_generator_py/mymsg/msg/_pose.py
 mymsg__py/CMakeFiles/mymsg__py: rosidl_generator_py/mymsg/msg/_poses.py
+mymsg__py/CMakeFiles/mymsg__py: rosidl_generator_py/mymsg/msg/_transform.py
+mymsg__py/CMakeFiles/mymsg__py: rosidl_generator_py/mymsg/msg/_multi_transform.py
 mymsg__py/CMakeFiles/mymsg__py: rosidl_generator_py/mymsg/msg/__init__.py
 mymsg__py/CMakeFiles/mymsg__py: rosidl_generator_py/mymsg/msg/_pose_s.c
 mymsg__py/CMakeFiles/mymsg__py: rosidl_generator_py/mymsg/msg/_poses_s.c
+mymsg__py/CMakeFiles/mymsg__py: rosidl_generator_py/mymsg/msg/_transform_s.c
+mymsg__py/CMakeFiles/mymsg__py: rosidl_generator_py/mymsg/msg/_multi_transform_s.c
 
 
 rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/lib/rosidl_generator_py/rosidl_generator_py
@@ -78,6 +82,8 @@ rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/
 rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/mymsg/msg/Pose.idl
 rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/mymsg/msg/Poses.idl
+rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/mymsg/msg/Transform.idl
+rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/mymsg/msg/MultiTransform.idl
 rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
 rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/std_msgs/msg/Byte.idl
 rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/std_msgs/msg/ByteMultiArray.idl
@@ -165,6 +171,12 @@ rosidl_generator_py/mymsg/msg/_pose.py: rosidl_generator_py/mymsg/_mymsg_s.ep.ro
 rosidl_generator_py/mymsg/msg/_poses.py: rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mymsg/msg/_poses.py
 
+rosidl_generator_py/mymsg/msg/_transform.py: rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mymsg/msg/_transform.py
+
+rosidl_generator_py/mymsg/msg/_multi_transform.py: rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mymsg/msg/_multi_transform.py
+
 rosidl_generator_py/mymsg/msg/__init__.py: rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mymsg/msg/__init__.py
 
@@ -174,15 +186,25 @@ rosidl_generator_py/mymsg/msg/_pose_s.c: rosidl_generator_py/mymsg/_mymsg_s.ep.r
 rosidl_generator_py/mymsg/msg/_poses_s.c: rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mymsg/msg/_poses_s.c
 
+rosidl_generator_py/mymsg/msg/_transform_s.c: rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mymsg/msg/_transform_s.c
+
+rosidl_generator_py/mymsg/msg/_multi_transform_s.c: rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mymsg/msg/_multi_transform_s.c
+
 mymsg__py: mymsg__py/CMakeFiles/mymsg__py
 mymsg__py: rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c
 mymsg__py: rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_introspection_c.c
 mymsg__py: rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_c.c
 mymsg__py: rosidl_generator_py/mymsg/msg/_pose.py
 mymsg__py: rosidl_generator_py/mymsg/msg/_poses.py
+mymsg__py: rosidl_generator_py/mymsg/msg/_transform.py
+mymsg__py: rosidl_generator_py/mymsg/msg/_multi_transform.py
 mymsg__py: rosidl_generator_py/mymsg/msg/__init__.py
 mymsg__py: rosidl_generator_py/mymsg/msg/_pose_s.c
 mymsg__py: rosidl_generator_py/mymsg/msg/_poses_s.c
+mymsg__py: rosidl_generator_py/mymsg/msg/_transform_s.c
+mymsg__py: rosidl_generator_py/mymsg/msg/_multi_transform_s.c
 mymsg__py: mymsg__py/CMakeFiles/mymsg__py.dir/build.make
 
 .PHONY : mymsg__py

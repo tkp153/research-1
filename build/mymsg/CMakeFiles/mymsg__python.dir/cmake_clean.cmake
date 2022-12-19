@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/mymsg__python.dir/rosidl_generator_py/mymsg/msg/_multi_transform_s.c.o"
   "CMakeFiles/mymsg__python.dir/rosidl_generator_py/mymsg/msg/_pose_s.c.o"
   "CMakeFiles/mymsg__python.dir/rosidl_generator_py/mymsg/msg/_poses_s.c.o"
+  "CMakeFiles/mymsg__python.dir/rosidl_generator_py/mymsg/msg/_transform_s.c.o"
   "rosidl_generator_py/mymsg/libmymsg__python.pdb"
   "rosidl_generator_py/mymsg/libmymsg__python.so"
 )

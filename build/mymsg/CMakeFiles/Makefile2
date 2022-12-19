@@ -125,12 +125,12 @@ CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c__pyext.dir/all: CMakeFiles/mymsg
 CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c__pyext.dir/all: mymsg__py/CMakeFiles/mymsg__py.dir/all
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c__pyext.dir/depend
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c__pyext.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=24,25 "Built target mymsg__rosidl_typesupport_fastrtps_c__pyext"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=34,35 "Built target mymsg__rosidl_typesupport_fastrtps_c__pyext"
 .PHONY : CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c__pyext.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c__pyext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 35
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 51
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c__pyext.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 0
 .PHONY : CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c__pyext.dir/rule
@@ -218,7 +218,7 @@ CMakeFiles/mymsg.dir/all: CMakeFiles/mymsg__rosidl_typesupport_introspection_cpp
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mymsg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 29
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 43
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mymsg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 0
 .PHONY : CMakeFiles/mymsg.dir/rule
@@ -240,12 +240,12 @@ CMakeFiles/mymsg.dir/clean:
 CMakeFiles/mymsg__rosidl_generator_c.dir/all:
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_generator_c.dir/build.make CMakeFiles/mymsg__rosidl_generator_c.dir/depend
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_generator_c.dir/build.make CMakeFiles/mymsg__rosidl_generator_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=6,7,8,9 "Built target mymsg__rosidl_generator_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=8,9,10,11,12,13 "Built target mymsg__rosidl_generator_c"
 .PHONY : CMakeFiles/mymsg__rosidl_generator_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mymsg__rosidl_generator_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mymsg__rosidl_generator_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 0
 .PHONY : CMakeFiles/mymsg__rosidl_generator_c.dir/rule
@@ -267,12 +267,12 @@ CMakeFiles/mymsg__rosidl_generator_c.dir/clean:
 CMakeFiles/mymsg__rosidl_typesupport_cpp.dir/all: CMakeFiles/mymsg__cpp.dir/all
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_typesupport_cpp.dir/build.make CMakeFiles/mymsg__rosidl_typesupport_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_typesupport_cpp.dir/build.make CMakeFiles/mymsg__rosidl_typesupport_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=16,17,18,19 "Built target mymsg__rosidl_typesupport_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=22,23,24,25,26,27 "Built target mymsg__rosidl_typesupport_cpp"
 .PHONY : CMakeFiles/mymsg__rosidl_typesupport_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mymsg__rosidl_typesupport_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mymsg__rosidl_typesupport_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 0
 .PHONY : CMakeFiles/mymsg__rosidl_typesupport_cpp.dir/rule
@@ -296,12 +296,12 @@ CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c.dir/all: CMakeFiles/mymsg__rosid
 CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c.dir/all: CMakeFiles/mymsg__cpp.dir/all
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c.dir/depend
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=20,21,22,23 "Built target mymsg__rosidl_typesupport_fastrtps_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=28,29,30,31,32,33 "Built target mymsg__rosidl_typesupport_fastrtps_c"
 .PHONY : CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 19
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 0
 .PHONY : CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c.dir/rule
@@ -323,12 +323,12 @@ CMakeFiles/mymsg__rosidl_typesupport_fastrtps_c.dir/clean:
 CMakeFiles/mymsg__rosidl_typesupport_fastrtps_cpp.dir/all: CMakeFiles/mymsg__cpp.dir/all
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/mymsg__rosidl_typesupport_fastrtps_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/mymsg__rosidl_typesupport_fastrtps_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=26,27,28,29 "Built target mymsg__rosidl_typesupport_fastrtps_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=36,37,38,39,40,41 "Built target mymsg__rosidl_typesupport_fastrtps_cpp"
 .PHONY : CMakeFiles/mymsg__rosidl_typesupport_fastrtps_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mymsg__rosidl_typesupport_fastrtps_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mymsg__rosidl_typesupport_fastrtps_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 0
 .PHONY : CMakeFiles/mymsg__rosidl_typesupport_fastrtps_cpp.dir/rule
@@ -350,12 +350,12 @@ CMakeFiles/mymsg__rosidl_typesupport_fastrtps_cpp.dir/clean:
 CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/mymsg__rosidl_generator_c.dir/all
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/depend
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=30,31,32,33 "Built target mymsg__rosidl_typesupport_introspection_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=42,43,44,45,46,47 "Built target mymsg__rosidl_typesupport_introspection_c"
 .PHONY : CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 0
 .PHONY : CMakeFiles/mymsg__rosidl_typesupport_introspection_c.dir/rule
@@ -381,12 +381,12 @@ CMakeFiles/mymsg__rosidl_typesupport_c__pyext.dir/all: CMakeFiles/mymsg__python.
 CMakeFiles/mymsg__rosidl_typesupport_c__pyext.dir/all: mymsg__py/CMakeFiles/mymsg__py.dir/all
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_typesupport_c__pyext.dir/build.make CMakeFiles/mymsg__rosidl_typesupport_c__pyext.dir/depend
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_typesupport_c__pyext.dir/build.make CMakeFiles/mymsg__rosidl_typesupport_c__pyext.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=14,15 "Built target mymsg__rosidl_typesupport_c__pyext"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=20,21 "Built target mymsg__rosidl_typesupport_c__pyext"
 .PHONY : CMakeFiles/mymsg__rosidl_typesupport_c__pyext.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mymsg__rosidl_typesupport_c__pyext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 35
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 51
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mymsg__rosidl_typesupport_c__pyext.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 0
 .PHONY : CMakeFiles/mymsg__rosidl_typesupport_c__pyext.dir/rule
@@ -408,12 +408,12 @@ CMakeFiles/mymsg__rosidl_typesupport_c__pyext.dir/clean:
 CMakeFiles/mymsg__rosidl_typesupport_c.dir/all: CMakeFiles/mymsg__rosidl_generator_c.dir/all
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_typesupport_c.dir/build.make CMakeFiles/mymsg__rosidl_typesupport_c.dir/depend
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_typesupport_c.dir/build.make CMakeFiles/mymsg__rosidl_typesupport_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=10,11,12,13 "Built target mymsg__rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=14,15,16,17,18,19 "Built target mymsg__rosidl_typesupport_c"
 .PHONY : CMakeFiles/mymsg__rosidl_typesupport_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mymsg__rosidl_typesupport_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mymsg__rosidl_typesupport_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 0
 .PHONY : CMakeFiles/mymsg__rosidl_typesupport_c.dir/rule
@@ -467,12 +467,12 @@ CMakeFiles/mymsg__rosidl_typesupport_introspection_c__pyext.dir/all: CMakeFiles/
 CMakeFiles/mymsg__rosidl_typesupport_introspection_c__pyext.dir/all: mymsg__py/CMakeFiles/mymsg__py.dir/all
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/mymsg__rosidl_typesupport_introspection_c__pyext.dir/depend
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/mymsg__rosidl_typesupport_introspection_c__pyext.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=34,35 "Built target mymsg__rosidl_typesupport_introspection_c__pyext"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=48,49 "Built target mymsg__rosidl_typesupport_introspection_c__pyext"
 .PHONY : CMakeFiles/mymsg__rosidl_typesupport_introspection_c__pyext.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mymsg__rosidl_typesupport_introspection_c__pyext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 35
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 51
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mymsg__rosidl_typesupport_introspection_c__pyext.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 0
 .PHONY : CMakeFiles/mymsg__rosidl_typesupport_introspection_c__pyext.dir/rule
@@ -494,12 +494,12 @@ CMakeFiles/mymsg__rosidl_typesupport_introspection_c__pyext.dir/clean:
 CMakeFiles/mymsg__rosidl_typesupport_introspection_cpp.dir/all: CMakeFiles/mymsg__cpp.dir/all
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/mymsg__rosidl_typesupport_introspection_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/mymsg__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/mymsg__rosidl_typesupport_introspection_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=36,37,38,39 "Built target mymsg__rosidl_typesupport_introspection_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=50,51,52,53,54,55 "Built target mymsg__rosidl_typesupport_introspection_cpp"
 .PHONY : CMakeFiles/mymsg__rosidl_typesupport_introspection_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mymsg__rosidl_typesupport_introspection_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mymsg__rosidl_typesupport_introspection_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 0
 .PHONY : CMakeFiles/mymsg__rosidl_typesupport_introspection_cpp.dir/rule
@@ -524,12 +524,12 @@ CMakeFiles/mymsg__python.dir/all: CMakeFiles/mymsg__rosidl_typesupport_c.dir/all
 CMakeFiles/mymsg__python.dir/all: mymsg__py/CMakeFiles/mymsg__py.dir/all
 	$(MAKE) -f CMakeFiles/mymsg__python.dir/build.make CMakeFiles/mymsg__python.dir/depend
 	$(MAKE) -f CMakeFiles/mymsg__python.dir/build.make CMakeFiles/mymsg__python.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=3,4,5 "Built target mymsg__python"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=3,4,5,6,7 "Built target mymsg__python"
 .PHONY : CMakeFiles/mymsg__python.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mymsg__python.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 49
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mymsg__python.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 0
 .PHONY : CMakeFiles/mymsg__python.dir/rule
@@ -556,7 +556,7 @@ mymsg__py/CMakeFiles/mymsg__py.dir/all: CMakeFiles/mymsg.dir/all
 
 # Build rule for subdir invocation for target.
 mymsg__py/CMakeFiles/mymsg__py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 44
 	$(MAKE) -f CMakeFiles/Makefile2 mymsg__py/CMakeFiles/mymsg__py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/research-1/build/mymsg/CMakeFiles 0
 .PHONY : mymsg__py/CMakeFiles/mymsg__py.dir/rule
