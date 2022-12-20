@@ -12,19 +12,13 @@ from yolox.utils import  multiclass_nms, demo_postprocess
 from yolox.data.data_augment import preproc as preprocess
 import numpy as np
 import sys
+from functools import partial
 
 class Image_Input(Node):
     def __init__(self):
         super().__init__("Image_Input")
         
         self.bridge = CvBridge()
-        
-        # service client
-        self.cli = self.create_client(Imagedata,"image_data")
-        # サーバー接続まで待機
-        while not self.cli.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info("service not available...")
-
         
         # RealSense D435i topic list(RGB data)
         in_topic ="/camera/color/image_raw"
@@ -50,21 +44,52 @@ class Image_Input(Node):
         # PUB-SUB
         self.sub = self.create_subscription(Image,in_topic,self.Image_PreProcessor,video_qos)
         
-        self.publish = self.create_publisher(Poses,"2d_keypoints",10)
+        self.publish = self.create_publisher(Poses,"two_d_keypoints",10)
         
         
     def Image_PreProcessor(self,data):
         
-        # Data (ROS2 TOPIC => RGB data)
+        ## service client
+        cli = self.create_client(Imagedata,"image_data")
+        # サーバー接続まで待機
+        while not cli.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info("service not available...")
+
         count = self.count
         request = Imagedata.Request()
         request.input_data = data
         request.input_count = count
         
-        future = self.cli.call_async(request)
-        #future.add_done_callback(self.services_callback)
+        future = cli.call_async(request)
+        future.add_done_callback(partial(self.services_callback))
         
-        if future.done():  
+    def services_callback(self,future):    
+        
+        try:
+            response = future.result()
+            response_check = response.output_cut
+            self.count = response.output_count
+            if(response_check == True):
+                    image_data = response.output_image
+                    rgb_image = self.bridge.imgmsg_to_cv2(image_data,"rgb8")
+                    self.Image_Processor(rgb_image)
+            else:    
+                pass
+        except Exception as e:
+            self.get_logger().info("Error: %r" % (e,))
+        '''
+        if future.done():  try:
+                response = future.result()
+                response_check = response.output_cut
+                self.count = response.output_count
+                if(response_check == True):
+                    image_data = response.output_image
+                    rgb_image = self.bridge.imgmsg_to_cv2(image_data,"rgb8")
+                    self.Image_Processor(rgb_image)
+                else:    
+                    pass
+            except Exception as e:
+                self.get_logger().info("Error: %r" % (e,))
             print("ok")
             try:
                 response = future.result()
@@ -80,6 +105,8 @@ class Image_Input(Node):
                 self.get_logger().info("Error: %r" % (e,))
         else:
             pass
+        '''
+        
         
     def Image_Processor(self,data):
         
