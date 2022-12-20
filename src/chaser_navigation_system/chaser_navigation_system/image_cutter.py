@@ -1,13 +1,13 @@
 import rclpy
 from rclpy.node import Node
-from mymsg.srv import ImageData
+from mymsg.srv import Imagedata
 import time
 
 class ImageCutter(Node):
     def __init__(self):
         super().__init__('ImageCutter')
         
-        self.services = self.create_service(ImageData,"image_data",self.cutter)
+        self.services = self.create_service(Imagedata,"image_data",self.cutter)
         
     def cutter(self,request,response):
         time.sleep(5)

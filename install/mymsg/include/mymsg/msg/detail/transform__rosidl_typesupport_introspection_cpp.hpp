@@ -1,1 +1,0 @@
-/root/research-1/build/mymsg/rosidl_typesupport_introspection_cpp/mymsg/msg/detail/transform__rosidl_typesupport_introspection_cpp.hpp

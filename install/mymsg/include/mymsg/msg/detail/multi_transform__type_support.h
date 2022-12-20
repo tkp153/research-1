@@ -1,1 +1,0 @@
-/root/research-1/build/mymsg/rosidl_generator_c/mymsg/msg/detail/multi_transform__type_support.h

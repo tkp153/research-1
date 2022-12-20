@@ -1,1 +1,0 @@
-/root/research-1/src/mymsg/msg/MultiTransform.msg

@@ -14,6 +14,8 @@
 
   <build_depend>mymsg</build_depend>
   <depend>action_msg</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
   <exec_depend>mymsg</exec_depend>
   <member_of_group>rosidl_interface_packages</member_of_group>
 

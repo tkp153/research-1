@@ -4,13 +4,14 @@ import cv2
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
 from mymsg.msg import Poses,Pose
-from mymsg.srv import ImageData
+from mymsg.srv import Imagedata
 from motpy import Detection,MultiObjectTracker
 from openpifpaf.predictor import Predictor
 import onnxruntime as ort
 from yolox.utils import  multiclass_nms, demo_postprocess
 from yolox.data.data_augment import preproc as preprocess
 import numpy as np
+import sys
 
 class Image_Input(Node):
     def __init__(self):
@@ -19,7 +20,7 @@ class Image_Input(Node):
         self.bridge = CvBridge()
         
         # service client
-        self.cli = self.create_client(ImageData,"image_data")
+        self.cli = self.create_client(Imagedata,"image_data")
         # サーバー接続まで待機
         while not self.cli.wait_for_service(timeout_sec=1.0):
             self.get_logger().info("service not available...")
@@ -57,7 +58,7 @@ class Image_Input(Node):
         # Data (ROS2 TOPIC => RGB data)
         rgb_image = self.bridge.imgmsg_to_cv2(data,"rgb8")
         count = self.count
-        request = ImageData.Request()
+        request = Imagedata.Request()
         request.input_data = rgb_image
         request.input_count = count
         

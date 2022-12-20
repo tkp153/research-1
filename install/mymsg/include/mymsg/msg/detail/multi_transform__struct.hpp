@@ -1,1 +1,0 @@
-/root/research-1/build/mymsg/rosidl_generator_cpp/mymsg/msg/detail/multi_transform__struct.hpp
