@@ -23,10 +23,9 @@ function _colcon_prefix_chain_powershell_source_script {
 
 # source chained prefixes
 _colcon_prefix_chain_powershell_source_script "/opt/ros/foxy\local_setup.ps1"
-_colcon_prefix_chain_powershell_source_script "/root/sirius/sirius_ws/install\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/root/colcon_ws/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/root/Pose_waypointmaker/install\local_setup.ps1"
-_colcon_prefix_chain_powershell_source_script "/root/research_version_two/install\local_setup.ps1"
-_colcon_prefix_chain_powershell_source_script "/root/chapter2/install\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/root/research/install\local_setup.ps1"
 
 # source this prefix
 $env:COLCON_CURRENT_PREFIX=(Split-Path $PSCommandPath -Parent)

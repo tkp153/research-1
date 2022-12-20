@@ -23,12 +23,11 @@ namespace rosidl_typesupport_c
 
 typedef struct _Imagedata_Request_type_support_ids_t
 {
-  const char * typesupport_identifier[3];
+  const char * typesupport_identifier[2];
 } _Imagedata_Request_type_support_ids_t;
 
 static const _Imagedata_Request_type_support_ids_t _Imagedata_Request_message_typesupport_ids = {
   {
-    "rosidl_typesupport_connext_c",  // ::rosidl_typesupport_connext_c::typesupport_identifier,
     "rosidl_typesupport_fastrtps_c",  // ::rosidl_typesupport_fastrtps_c::typesupport_identifier,
     "rosidl_typesupport_introspection_c",  // ::rosidl_typesupport_introspection_c::typesupport_identifier,
   }
@@ -36,7 +35,7 @@ static const _Imagedata_Request_type_support_ids_t _Imagedata_Request_message_ty
 
 typedef struct _Imagedata_Request_type_support_symbol_names_t
 {
-  const char * symbol_name[3];
+  const char * symbol_name[2];
 } _Imagedata_Request_type_support_symbol_names_t;
 
 #define STRINGIFY_(s) #s
@@ -44,7 +43,6 @@ typedef struct _Imagedata_Request_type_support_symbol_names_t
 
 static const _Imagedata_Request_type_support_symbol_names_t _Imagedata_Request_message_typesupport_symbol_names = {
   {
-    STRINGIFY(ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_connext_c, mymsg, srv, Imagedata_Request)),
     STRINGIFY(ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, mymsg, srv, Imagedata_Request)),
     STRINGIFY(ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, mymsg, srv, Imagedata_Request)),
   }
@@ -52,19 +50,18 @@ static const _Imagedata_Request_type_support_symbol_names_t _Imagedata_Request_m
 
 typedef struct _Imagedata_Request_type_support_data_t
 {
-  void * data[3];
+  void * data[2];
 } _Imagedata_Request_type_support_data_t;
 
 static _Imagedata_Request_type_support_data_t _Imagedata_Request_message_typesupport_data = {
   {
     0,  // will store the shared library later
     0,  // will store the shared library later
-    0,  // will store the shared library later
   }
 };
 
 static const type_support_map_t _Imagedata_Request_message_typesupport_map = {
-  3,
+  2,
   "mymsg",
   &_Imagedata_Request_message_typesupport_ids.typesupport_identifier[0],
   &_Imagedata_Request_message_typesupport_symbol_names.symbol_name[0],
@@ -128,12 +125,11 @@ namespace rosidl_typesupport_c
 
 typedef struct _Imagedata_Response_type_support_ids_t
 {
-  const char * typesupport_identifier[3];
+  const char * typesupport_identifier[2];
 } _Imagedata_Response_type_support_ids_t;
 
 static const _Imagedata_Response_type_support_ids_t _Imagedata_Response_message_typesupport_ids = {
   {
-    "rosidl_typesupport_connext_c",  // ::rosidl_typesupport_connext_c::typesupport_identifier,
     "rosidl_typesupport_fastrtps_c",  // ::rosidl_typesupport_fastrtps_c::typesupport_identifier,
     "rosidl_typesupport_introspection_c",  // ::rosidl_typesupport_introspection_c::typesupport_identifier,
   }
@@ -141,7 +137,7 @@ static const _Imagedata_Response_type_support_ids_t _Imagedata_Response_message_
 
 typedef struct _Imagedata_Response_type_support_symbol_names_t
 {
-  const char * symbol_name[3];
+  const char * symbol_name[2];
 } _Imagedata_Response_type_support_symbol_names_t;
 
 #define STRINGIFY_(s) #s
@@ -149,7 +145,6 @@ typedef struct _Imagedata_Response_type_support_symbol_names_t
 
 static const _Imagedata_Response_type_support_symbol_names_t _Imagedata_Response_message_typesupport_symbol_names = {
   {
-    STRINGIFY(ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_connext_c, mymsg, srv, Imagedata_Response)),
     STRINGIFY(ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, mymsg, srv, Imagedata_Response)),
     STRINGIFY(ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, mymsg, srv, Imagedata_Response)),
   }
@@ -157,19 +152,18 @@ static const _Imagedata_Response_type_support_symbol_names_t _Imagedata_Response
 
 typedef struct _Imagedata_Response_type_support_data_t
 {
-  void * data[3];
+  void * data[2];
 } _Imagedata_Response_type_support_data_t;
 
 static _Imagedata_Response_type_support_data_t _Imagedata_Response_message_typesupport_data = {
   {
     0,  // will store the shared library later
     0,  // will store the shared library later
-    0,  // will store the shared library later
   }
 };
 
 static const type_support_map_t _Imagedata_Response_message_typesupport_map = {
-  3,
+  2,
   "mymsg",
   &_Imagedata_Response_message_typesupport_ids.typesupport_identifier[0],
   &_Imagedata_Response_message_typesupport_symbol_names.symbol_name[0],
@@ -227,12 +221,11 @@ namespace rosidl_typesupport_c
 
 typedef struct _Imagedata_type_support_ids_t
 {
-  const char * typesupport_identifier[3];
+  const char * typesupport_identifier[2];
 } _Imagedata_type_support_ids_t;
 
 static const _Imagedata_type_support_ids_t _Imagedata_service_typesupport_ids = {
   {
-    "rosidl_typesupport_connext_c",  // ::rosidl_typesupport_connext_c::typesupport_identifier,
     "rosidl_typesupport_fastrtps_c",  // ::rosidl_typesupport_fastrtps_c::typesupport_identifier,
     "rosidl_typesupport_introspection_c",  // ::rosidl_typesupport_introspection_c::typesupport_identifier,
   }
@@ -240,7 +233,7 @@ static const _Imagedata_type_support_ids_t _Imagedata_service_typesupport_ids = 
 
 typedef struct _Imagedata_type_support_symbol_names_t
 {
-  const char * symbol_name[3];
+  const char * symbol_name[2];
 } _Imagedata_type_support_symbol_names_t;
 
 #define STRINGIFY_(s) #s
@@ -248,7 +241,6 @@ typedef struct _Imagedata_type_support_symbol_names_t
 
 static const _Imagedata_type_support_symbol_names_t _Imagedata_service_typesupport_symbol_names = {
   {
-    STRINGIFY(ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_connext_c, mymsg, srv, Imagedata)),
     STRINGIFY(ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, mymsg, srv, Imagedata)),
     STRINGIFY(ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_introspection_c, mymsg, srv, Imagedata)),
   }
@@ -256,19 +248,18 @@ static const _Imagedata_type_support_symbol_names_t _Imagedata_service_typesuppo
 
 typedef struct _Imagedata_type_support_data_t
 {
-  void * data[3];
+  void * data[2];
 } _Imagedata_type_support_data_t;
 
 static _Imagedata_type_support_data_t _Imagedata_service_typesupport_data = {
   {
     0,  // will store the shared library later
     0,  // will store the shared library later
-    0,  // will store the shared library later
   }
 };
 
 static const type_support_map_t _Imagedata_service_typesupport_map = {
-  3,
+  2,
   "mymsg",
   &_Imagedata_service_typesupport_ids.typesupport_identifier[0],
   &_Imagedata_service_typesupport_symbol_names.symbol_name[0],

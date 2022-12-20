@@ -34,7 +34,7 @@ class Image_Input(Node):
         video_qos.reliability = rclpy.qos.QoSReliabilityPolicy.BEST_EFFORT
         
         # Counter value
-        self.counter = 0
+        self.count = 0
         
         # openpifpaf
         self.predictor = Predictor()
@@ -50,29 +50,30 @@ class Image_Input(Node):
         # PUB-SUB
         self.sub = self.create_subscription(Image,in_topic,self.Image_PreProcessor,video_qos)
         
-        self.publish = self.create_publish(Poses,"2d_keypoints",10)
+        self.publish = self.create_publisher(Poses,"2d_keypoints",10)
         
         
     def Image_PreProcessor(self,data):
         
         # Data (ROS2 TOPIC => RGB data)
-        rgb_image = self.bridge.imgmsg_to_cv2(data,"rgb8")
         count = self.count
         request = Imagedata.Request()
-        request.input_data = rgb_image
+        request.input_data = data
         request.input_count = count
         
         future = self.cli.call_async(request)
-        future.add_done_callback(self.services_callback)
+        #future.add_done_callback(self.services_callback)
         
         if future.done():  
+            print("ok")
             try:
                 response = future.result()
                 response_check = response.output_cut
                 self.count = response.output_count
                 if(response_check == True):
                     image_data = response.output_image
-                    self.Image_Processor(image_data)
+                    rgb_image = self.bridge.imgmsg_to_cv2(image_data,"rgb8")
+                    self.Image_Processor(rgb_image)
                 else:    
                     pass
             except Exception as e:

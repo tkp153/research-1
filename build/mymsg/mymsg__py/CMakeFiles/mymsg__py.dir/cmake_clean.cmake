@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "../rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_c.c"
-  "../rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_connext_c.c"
   "../rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/mymsg/_mymsg_s.ep.rosidl_typesupport_introspection_c.c"
   "../rosidl_generator_py/mymsg/msg/__init__.py"

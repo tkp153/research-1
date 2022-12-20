@@ -13,7 +13,7 @@ class ImageCutter(Node):
         time.sleep(5)
         if request.input_count % 4 == 0:
             response.output_cut = True
-            response.output_image = request.input_data
+            response.output_data = request.input_data
         else:
             response.output_cut = False
         

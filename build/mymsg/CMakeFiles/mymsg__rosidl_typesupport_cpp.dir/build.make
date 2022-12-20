@@ -169,7 +169,7 @@ rosidl_typesupport_cpp/mymsg/msg/pose__type_support.cpp: /opt/ros/foxy/share/sen
 rosidl_typesupport_cpp/mymsg/msg/pose__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/msg/TimeReference.idl
 rosidl_typesupport_cpp/mymsg/msg/pose__type_support.cpp: /opt/ros/foxy/share/sensor_msgs/srv/SetCameraInfo.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/research-1/build/mymsg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ type support dispatch for ROS interfaces"
-	/usr/bin/python3 /opt/ros/foxy/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp --generator-arguments-file /root/research-1/build/mymsg/rosidl_typesupport_cpp__arguments.json --typesupports rosidl_typesupport_connext_cpp rosidl_typesupport_fastrtps_cpp rosidl_typesupport_introspection_cpp
+	/usr/bin/python3 /opt/ros/foxy/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp --generator-arguments-file /root/research-1/build/mymsg/rosidl_typesupport_cpp__arguments.json --typesupports rosidl_typesupport_fastrtps_cpp rosidl_typesupport_introspection_cpp
 
 rosidl_typesupport_cpp/mymsg/msg/poses__type_support.cpp: rosidl_typesupport_cpp/mymsg/msg/pose__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_cpp/mymsg/msg/poses__type_support.cpp
