@@ -1,2 +1,0 @@
-Invoking command in '/root/research-1/build/mymsg': /usr/bin/cmake --build /root/research-1/build/mymsg -- -j12 -l12
-Invoked command in '/root/research-1/build/mymsg' returned '2': /usr/bin/cmake --build /root/research-1/build/mymsg -- -j12 -l12

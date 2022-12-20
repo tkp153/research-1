@@ -1,8 +1,0 @@
-msg/MultiTransform.idl
-msg/MultiTransform.msg
-msg/Pose.idl
-msg/Pose.msg
-msg/Poses.idl
-msg/Poses.msg
-msg/Transform.idl
-msg/Transform.msg
