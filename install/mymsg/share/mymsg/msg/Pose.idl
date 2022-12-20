@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mymsg/msg/Pose.msg
+// generated code does not contain a copyright notice
+
+
+module mymsg {
+  module msg {
+    struct Pose {
+      sequence<float> keypoints;
+    };
+  };
+};

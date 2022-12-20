@@ -1,0 +1,3 @@
+source;share/chaser_navigation_system/hook/pythonpath.ps1
+source;share/chaser_navigation_system/hook/pythonpath.dsv
+source;share/chaser_navigation_system/hook/pythonpath.sh

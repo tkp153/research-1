@@ -1,0 +1,45 @@
+running egg_info
+creating ../../build/chaser_navigation_system/chaser_navigation_system.egg-info
+writing ../../build/chaser_navigation_system/chaser_navigation_system.egg-info/PKG-INFO
+writing dependency_links to ../../build/chaser_navigation_system/chaser_navigation_system.egg-info/dependency_links.txt
+writing entry points to ../../build/chaser_navigation_system/chaser_navigation_system.egg-info/entry_points.txt
+writing requirements to ../../build/chaser_navigation_system/chaser_navigation_system.egg-info/requires.txt
+writing top-level names to ../../build/chaser_navigation_system/chaser_navigation_system.egg-info/top_level.txt
+writing manifest file '../../build/chaser_navigation_system/chaser_navigation_system.egg-info/SOURCES.txt'
+reading manifest file '../../build/chaser_navigation_system/chaser_navigation_system.egg-info/SOURCES.txt'
+writing manifest file '../../build/chaser_navigation_system/chaser_navigation_system.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /root/research-1/build/chaser_navigation_system/build
+creating /root/research-1/build/chaser_navigation_system/build/lib
+creating /root/research-1/build/chaser_navigation_system/build/lib/chaser_navigation_system
+copying chaser_navigation_system/image_cutter.py -> /root/research-1/build/chaser_navigation_system/build/lib/chaser_navigation_system
+copying chaser_navigation_system/image_inputer.py -> /root/research-1/build/chaser_navigation_system/build/lib/chaser_navigation_system
+copying chaser_navigation_system/3d_pose_analysis.py -> /root/research-1/build/chaser_navigation_system/build/lib/chaser_navigation_system
+copying chaser_navigation_system/pose_tf2.py -> /root/research-1/build/chaser_navigation_system/build/lib/chaser_navigation_system
+copying chaser_navigation_system/__init__.py -> /root/research-1/build/chaser_navigation_system/build/lib/chaser_navigation_system
+running install
+running install_lib
+creating /root/research-1/install/chaser_navigation_system/lib/python3.8/site-packages/chaser_navigation_system
+copying /root/research-1/build/chaser_navigation_system/build/lib/chaser_navigation_system/image_cutter.py -> /root/research-1/install/chaser_navigation_system/lib/python3.8/site-packages/chaser_navigation_system
+copying /root/research-1/build/chaser_navigation_system/build/lib/chaser_navigation_system/image_inputer.py -> /root/research-1/install/chaser_navigation_system/lib/python3.8/site-packages/chaser_navigation_system
+copying /root/research-1/build/chaser_navigation_system/build/lib/chaser_navigation_system/3d_pose_analysis.py -> /root/research-1/install/chaser_navigation_system/lib/python3.8/site-packages/chaser_navigation_system
+copying /root/research-1/build/chaser_navigation_system/build/lib/chaser_navigation_system/pose_tf2.py -> /root/research-1/install/chaser_navigation_system/lib/python3.8/site-packages/chaser_navigation_system
+copying /root/research-1/build/chaser_navigation_system/build/lib/chaser_navigation_system/__init__.py -> /root/research-1/install/chaser_navigation_system/lib/python3.8/site-packages/chaser_navigation_system
+byte-compiling /root/research-1/install/chaser_navigation_system/lib/python3.8/site-packages/chaser_navigation_system/image_cutter.py to image_cutter.cpython-38.pyc
+byte-compiling /root/research-1/install/chaser_navigation_system/lib/python3.8/site-packages/chaser_navigation_system/image_inputer.py to image_inputer.cpython-38.pyc
+byte-compiling /root/research-1/install/chaser_navigation_system/lib/python3.8/site-packages/chaser_navigation_system/3d_pose_analysis.py to 3d_pose_analysis.cpython-38.pyc
+byte-compiling /root/research-1/install/chaser_navigation_system/lib/python3.8/site-packages/chaser_navigation_system/pose_tf2.py to pose_tf2.cpython-38.pyc
+byte-compiling /root/research-1/install/chaser_navigation_system/lib/python3.8/site-packages/chaser_navigation_system/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /root/research-1/install/chaser_navigation_system/share/ament_index
+creating /root/research-1/install/chaser_navigation_system/share/ament_index/resource_index
+creating /root/research-1/install/chaser_navigation_system/share/ament_index/resource_index/packages
+copying resource/chaser_navigation_system -> /root/research-1/install/chaser_navigation_system/share/ament_index/resource_index/packages
+copying package.xml -> /root/research-1/install/chaser_navigation_system/share/chaser_navigation_system
+running install_egg_info
+Copying ../../build/chaser_navigation_system/chaser_navigation_system.egg-info to /root/research-1/install/chaser_navigation_system/lib/python3.8/site-packages/chaser_navigation_system-0.0.0-py3.8.egg-info
+running install_scripts
+Installing image_cutter script to /root/research-1/install/chaser_navigation_system/lib/chaser_navigation_system
+Installing image_inputer script to /root/research-1/install/chaser_navigation_system/lib/chaser_navigation_system
+writing list of installed files to '/root/research-1/build/chaser_navigation_system/install.log'

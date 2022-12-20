@@ -40,7 +40,7 @@ set(srv_files
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
   ${srv_files}
-  DEPENDENCIES std_msgs visualization_msgs geometry_msgs # Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg  
+  DEPENDENCIES std_msgs visualization_msgs geometry_msgs sensor_msgs# Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg  
 )
 ament_export_dependencies(rosidl_default_runtime)
 

@@ -1,0 +1,4 @@
+[console_scripts]
+image_cutter = chaser_navigation_system.image_cutter:main
+image_inputer = chaser_navigation_system.image_inputer:main
+

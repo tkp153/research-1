@@ -1,0 +1,25 @@
+[0.855s] Invoking command in '/root/research-1/src/chaser_navigation_system': PYTHONPATH=/root/research-1/build/chaser_navigation_system/prefix_override:/root/research-1/install/chaser_navigation_system/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/chaser_navigation_system build --build-base /root/research-1/build/chaser_navigation_system/build install --record /root/research-1/build/chaser_navigation_system/install.log --install-scripts $base/lib/chaser_navigation_system --single-version-externally-managed
+[1.121s] running egg_info
+[1.124s] writing ../../build/chaser_navigation_system/chaser_navigation_system.egg-info/PKG-INFO
+[1.125s] writing dependency_links to ../../build/chaser_navigation_system/chaser_navigation_system.egg-info/dependency_links.txt
+[1.126s] writing entry points to ../../build/chaser_navigation_system/chaser_navigation_system.egg-info/entry_points.txt
+[1.126s] writing requirements to ../../build/chaser_navigation_system/chaser_navigation_system.egg-info/requires.txt
+[1.127s] writing top-level names to ../../build/chaser_navigation_system/chaser_navigation_system.egg-info/top_level.txt
+[1.172s] reading manifest file '../../build/chaser_navigation_system/chaser_navigation_system.egg-info/SOURCES.txt'
+[1.173s] writing manifest file '../../build/chaser_navigation_system/chaser_navigation_system.egg-info/SOURCES.txt'
+[1.173s] running build
+[1.173s] running build_py
+[1.174s] copying chaser_navigation_system/image_cutter.py -> /root/research-1/build/chaser_navigation_system/build/lib/chaser_navigation_system
+[1.174s] running install
+[1.176s] running install_lib
+[1.177s] copying /root/research-1/build/chaser_navigation_system/build/lib/chaser_navigation_system/image_cutter.py -> /root/research-1/install/chaser_navigation_system/lib/python3.8/site-packages/chaser_navigation_system
+[1.178s] byte-compiling /root/research-1/install/chaser_navigation_system/lib/python3.8/site-packages/chaser_navigation_system/image_cutter.py to image_cutter.cpython-38.pyc
+[1.181s] running install_data
+[1.181s] running install_egg_info
+[1.184s] removing '/root/research-1/install/chaser_navigation_system/lib/python3.8/site-packages/chaser_navigation_system-0.0.0-py3.8.egg-info' (and everything under it)
+[1.184s] Copying ../../build/chaser_navigation_system/chaser_navigation_system.egg-info to /root/research-1/install/chaser_navigation_system/lib/python3.8/site-packages/chaser_navigation_system-0.0.0-py3.8.egg-info
+[1.185s] running install_scripts
+[1.208s] Installing image_cutter script to /root/research-1/install/chaser_navigation_system/lib/chaser_navigation_system
+[1.208s] Installing image_inputer script to /root/research-1/install/chaser_navigation_system/lib/chaser_navigation_system
+[1.209s] writing list of installed files to '/root/research-1/build/chaser_navigation_system/install.log'
+[1.232s] Invoked command in '/root/research-1/src/chaser_navigation_system' returned '0': PYTHONPATH=/root/research-1/build/chaser_navigation_system/prefix_override:/root/research-1/install/chaser_navigation_system/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/chaser_navigation_system build --build-base /root/research-1/build/chaser_navigation_system/build install --record /root/research-1/build/chaser_navigation_system/install.log --install-scripts $base/lib/chaser_navigation_system --single-version-externally-managed

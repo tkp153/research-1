@@ -1,0 +1,53 @@
+// generated from rosidl_generator_dds_idl/resource/idl.idl.em
+// with input from mymsg:srv/Imagedata.idl
+// generated code does not contain a copyright notice
+#include "sensor_msgs/msg/dds_connext/Image_.idl"
+
+#ifndef __mymsg__srv__imagedata__idl__
+#define __mymsg__srv__imagedata__idl__
+
+
+module mymsg {
+
+module srv {
+
+module dds_ {
+
+
+struct Imagedata_Request_ {
+sensor_msgs::msg::dds_::Image_ input_data_;
+long long input_count_;
+
+};
+
+
+};  // module dds_
+
+};  // module srv
+
+};  // module mymsg
+
+
+module mymsg {
+
+module srv {
+
+module dds_ {
+
+
+struct Imagedata_Response_ {
+boolean output_cut_;
+long long output_count_;
+sensor_msgs::msg::dds_::Image_ output_data_;
+
+};
+
+
+};  // module dds_
+
+};  // module srv
+
+};  // module mymsg
+
+
+#endif  // __mymsg__srv__imagedata__idl__

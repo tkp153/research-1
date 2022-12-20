@@ -1,0 +1,5 @@
+/root/research-1/build/mymsg/rosidl_adapter/mymsg:msg/Pose.idl
+/root/research-1/build/mymsg/rosidl_adapter/mymsg:msg/Poses.idl
+/root/research-1/build/mymsg/rosidl_adapter/mymsg:msg/Transform.idl
+/root/research-1/build/mymsg/rosidl_adapter/mymsg:msg/MultiTransform.idl
+/root/research-1/build/mymsg/rosidl_adapter/mymsg:srv/Imagedata.idl
