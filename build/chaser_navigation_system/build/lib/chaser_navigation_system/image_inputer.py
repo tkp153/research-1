@@ -49,6 +49,12 @@ class Image_Input(Node):
         
     def Image_PreProcessor(self,data):
         
+        if(self.count % 4 == 0):
+            rgb_image = self.bridge.imgmsg_to_cv2(data,"rgb8")
+            self.Image_Processor(rgb_image)
+            
+        self.count += 1
+        '''
         ## service client
         cli = self.create_client(Imagedata,"image_data")
         # サーバー接続まで待機
@@ -63,6 +69,8 @@ class Image_Input(Node):
         future = cli.call_async(request)
         future.add_done_callback(partial(self.services_callback))
         
+        '''
+        
     def services_callback(self,future):    
         
         try:
@@ -70,7 +78,7 @@ class Image_Input(Node):
             response_check = response.output_cut
             self.count = response.output_count
             if(response_check == True):
-                    image_data = response.output_image
+                    image_data = response.output_data
                     rgb_image = self.bridge.imgmsg_to_cv2(image_data,"rgb8")
                     self.Image_Processor(rgb_image)
             else:    

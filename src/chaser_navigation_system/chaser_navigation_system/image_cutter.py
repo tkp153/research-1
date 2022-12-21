@@ -10,13 +10,13 @@ class ImageCutter(Node):
         self.service = self.create_service(Imagedata,'image_data',self.cutter)
         
     def cutter(self,request,response):
-        time.sleep(5)
+        time.sleep(1)
         if request.input_count % 4 == 0:
             response.output_cut = True
-            response.output_data = request.input_data
         else:
             response.output_cut = False
-        
+            #response.output_data = request.input_data
+        response.output_data = request.input_data
         response.output_count = request.input_count + 1
         return response
     
