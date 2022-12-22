@@ -58,14 +58,17 @@ class MultiTransform(metaclass=Metaclass_MultiTransform):
 
     __slots__ = [
         '_transform',
+        '_id',
     ]
 
     _fields_and_field_types = {
         'transform': 'sequence<mymsg/Transform>',
+        'id': 'sequence<string>',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['mymsg', 'msg'], 'Transform')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.UnboundedString()),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -73,6 +76,7 @@ class MultiTransform(metaclass=Metaclass_MultiTransform):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.transform = kwargs.get('transform', [])
+        self.id = kwargs.get('id', [])
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -105,6 +109,8 @@ class MultiTransform(metaclass=Metaclass_MultiTransform):
             return False
         if self.transform != other.transform:
             return False
+        if self.id != other.id:
+            return False
         return True
 
     @classmethod
@@ -135,3 +141,26 @@ class MultiTransform(metaclass=Metaclass_MultiTransform):
                  True), \
                 "The 'transform' field must be a set or sequence and each value of type 'Transform'"
         self._transform = value
+
+    @property  # noqa: A003
+    def id(self):  # noqa: A003
+        """Message field 'id'."""
+        return self._id
+
+    @id.setter  # noqa: A003
+    def id(self, value):  # noqa: A003
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, str) for v in value) and
+                 True), \
+                "The 'id' field must be a set or sequence and each value of type 'str'"
+        self._id = value

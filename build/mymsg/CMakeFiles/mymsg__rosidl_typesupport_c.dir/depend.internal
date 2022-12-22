@@ -6,6 +6,8 @@ CMakeFiles/mymsg__rosidl_typesupport_c.dir/rosidl_typesupport_c/mymsg/msg/multi_
  /opt/ros/foxy/include/geometry_msgs/msg/detail/transform__struct.h
  /opt/ros/foxy/include/geometry_msgs/msg/detail/vector3__struct.h
  /opt/ros/foxy/include/rosidl_runtime_c/message_type_support_struct.h
+ /opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
+ /opt/ros/foxy/include/rosidl_runtime_c/string.h
  /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
  /opt/ros/foxy/include/rosidl_typesupport_c/identifier.h
  /opt/ros/foxy/include/rosidl_typesupport_c/message_type_support_dispatch.h

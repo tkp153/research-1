@@ -21,7 +21,9 @@ setup(
     entry_points={
         'console_scripts': [
             'image_inputer = chaser_navigation_system.image_inputer:main',
-            'image_cutter = chaser_navigation_system.image_cutter:main'
+            'three_d_pose_analysis = chaser_navigation_system.three_d_pose_analysis:main',
+            'pose_tf2 = chaser_navigation_system.pose_tf2:main',
+            'rgbd_generator = chaser_navigation_system.rgbd_generator:main',
         ],
     },
 )

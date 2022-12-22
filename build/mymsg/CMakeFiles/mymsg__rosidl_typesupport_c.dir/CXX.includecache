@@ -233,6 +233,8 @@ stdint.h
 -
 mymsg/msg/detail/transform__struct.h
 rosidl_generator_c/mymsg/msg/detail/mymsg/msg/detail/transform__struct.h
+rosidl_runtime_c/string.h
+rosidl_generator_c/mymsg/msg/detail/rosidl_runtime_c/string.h
 
 rosidl_generator_c/mymsg/msg/detail/pose__struct.h
 stdbool.h

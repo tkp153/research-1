@@ -7,6 +7,8 @@ CMakeFiles/mymsg__python.dir/rosidl_generator_py/mymsg/msg/_multi_transform_s.c.
  /opt/ros/foxy/include/geometry_msgs/msg/detail/vector3__struct.h
  /opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
  /opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence_functions.h
+ /opt/ros/foxy/include/rosidl_runtime_c/string.h
+ /opt/ros/foxy/include/rosidl_runtime_c/string_functions.h
  /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
  /root/research-1/build/mymsg/rosidl_generator_py/mymsg/msg/_multi_transform_s.c
  /usr/include/python3.8/Python.h

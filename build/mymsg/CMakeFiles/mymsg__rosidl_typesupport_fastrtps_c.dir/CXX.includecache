@@ -571,6 +571,10 @@ fastcdr/Cdr.h
 /root/research-1/build/mymsg/rosidl_typesupport_fastrtps_c/mymsg/msg/detail/fastcdr/Cdr.h
 mymsg/msg/detail/transform__functions.h
 /root/research-1/build/mymsg/rosidl_typesupport_fastrtps_c/mymsg/msg/detail/mymsg/msg/detail/transform__functions.h
+rosidl_runtime_c/string.h
+/root/research-1/build/mymsg/rosidl_typesupport_fastrtps_c/mymsg/msg/detail/rosidl_runtime_c/string.h
+rosidl_runtime_c/string_functions.h
+/root/research-1/build/mymsg/rosidl_typesupport_fastrtps_c/mymsg/msg/detail/rosidl_runtime_c/string_functions.h
 
 /root/research-1/build/mymsg/rosidl_typesupport_fastrtps_c/mymsg/msg/detail/pose__type_support_c.cpp
 mymsg/msg/detail/pose__rosidl_typesupport_fastrtps_c.h
@@ -711,6 +715,8 @@ stdint.h
 -
 mymsg/msg/detail/transform__struct.h
 rosidl_generator_c/mymsg/msg/detail/mymsg/msg/detail/transform__struct.h
+rosidl_runtime_c/string.h
+rosidl_generator_c/mymsg/msg/detail/rosidl_runtime_c/string.h
 
 rosidl_generator_c/mymsg/msg/detail/pose__functions.h
 stdbool.h

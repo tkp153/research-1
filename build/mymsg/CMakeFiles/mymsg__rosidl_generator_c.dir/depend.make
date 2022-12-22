@@ -10,6 +10,9 @@ CMakeFiles/mymsg__rosidl_generator_c.dir/rosidl_generator_c/mymsg/msg/detail/mul
 CMakeFiles/mymsg__rosidl_generator_c.dir/rosidl_generator_c/mymsg/msg/detail/multi_transform__functions.c.o: /opt/ros/foxy/include/rcutils/types/rcutils_ret.h
 CMakeFiles/mymsg__rosidl_generator_c.dir/rosidl_generator_c/mymsg/msg/detail/multi_transform__functions.c.o: /opt/ros/foxy/include/rcutils/visibility_control.h
 CMakeFiles/mymsg__rosidl_generator_c.dir/rosidl_generator_c/mymsg/msg/detail/multi_transform__functions.c.o: /opt/ros/foxy/include/rcutils/visibility_control_macros.h
+CMakeFiles/mymsg__rosidl_generator_c.dir/rosidl_generator_c/mymsg/msg/detail/multi_transform__functions.c.o: /opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
+CMakeFiles/mymsg__rosidl_generator_c.dir/rosidl_generator_c/mymsg/msg/detail/multi_transform__functions.c.o: /opt/ros/foxy/include/rosidl_runtime_c/string.h
+CMakeFiles/mymsg__rosidl_generator_c.dir/rosidl_generator_c/mymsg/msg/detail/multi_transform__functions.c.o: /opt/ros/foxy/include/rosidl_runtime_c/string_functions.h
 CMakeFiles/mymsg__rosidl_generator_c.dir/rosidl_generator_c/mymsg/msg/detail/multi_transform__functions.c.o: /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
 CMakeFiles/mymsg__rosidl_generator_c.dir/rosidl_generator_c/mymsg/msg/detail/multi_transform__functions.c.o: rosidl_generator_c/mymsg/msg/detail/multi_transform__functions.c
 CMakeFiles/mymsg__rosidl_generator_c.dir/rosidl_generator_c/mymsg/msg/detail/multi_transform__functions.c.o: rosidl_generator_c/mymsg/msg/detail/multi_transform__functions.h

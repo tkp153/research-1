@@ -10,6 +10,7 @@
   <depend>action_msg</depend>
   <depend>std_msgs</depend>
   <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
   
   <depend>mymsg<depend>
   <member_of_group>rosidl_interface_packages</member_of_group>

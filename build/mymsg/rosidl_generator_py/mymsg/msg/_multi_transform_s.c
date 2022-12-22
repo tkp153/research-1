@@ -19,6 +19,9 @@
 #include "rosidl_runtime_c/primitives_sequence.h"
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 
+#include "rosidl_runtime_c/string.h"
+#include "rosidl_runtime_c/string_functions.h"
+
 // Nested array functions includes
 #include "mymsg/msg/detail/transform__functions.h"
 // end nested array functions include
@@ -91,6 +94,51 @@ bool mymsg__msg__multi_transform__convert_from_py(PyObject * _pymsg, void * _ros
     Py_DECREF(seq_field);
     Py_DECREF(field);
   }
+  {  // id
+    PyObject * field = PyObject_GetAttrString(_pymsg, "id");
+    if (!field) {
+      return false;
+    }
+    {
+      PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'id'");
+      if (!seq_field) {
+        Py_DECREF(field);
+        return false;
+      }
+      Py_ssize_t size = PySequence_Size(field);
+      if (-1 == size) {
+        Py_DECREF(seq_field);
+        Py_DECREF(field);
+        return false;
+      }
+      if (!rosidl_runtime_c__String__Sequence__init(&(ros_message->id), size)) {
+        PyErr_SetString(PyExc_RuntimeError, "unable to create String__Sequence ros_message");
+        Py_DECREF(seq_field);
+        Py_DECREF(field);
+        return false;
+      }
+      rosidl_runtime_c__String * dest = ros_message->id.data;
+      for (Py_ssize_t i = 0; i < size; ++i) {
+        PyObject * item = PySequence_Fast_GET_ITEM(seq_field, i);
+        if (!item) {
+          Py_DECREF(seq_field);
+          Py_DECREF(field);
+          return false;
+        }
+        assert(PyUnicode_Check(item));
+        PyObject * encoded_item = PyUnicode_AsUTF8String(item);
+        if (!encoded_item) {
+          Py_DECREF(seq_field);
+          Py_DECREF(field);
+          return false;
+        }
+        rosidl_runtime_c__String__assign(&dest[i], PyBytes_AS_STRING(encoded_item));
+        Py_DECREF(encoded_item);
+      }
+      Py_DECREF(seq_field);
+    }
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -135,6 +183,32 @@ PyObject * mymsg__msg__multi_transform__convert_to_py(void * raw_ros_message)
     assert(PySequence_Check(field));
     {
       int rc = PyObject_SetAttrString(_pymessage, "transform", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // id
+    PyObject * field = NULL;
+    size_t size = ros_message->id.size;
+    rosidl_runtime_c__String * src = ros_message->id.data;
+    field = PyList_New(size);
+    if (!field) {
+      return NULL;
+    }
+    for (size_t i = 0; i < size; ++i) {
+      PyObject * decoded_item = PyUnicode_DecodeUTF8(src[i].data, strlen(src[i].data), "strict");
+      if (!decoded_item) {
+        return NULL;
+      }
+      int rc = PyList_SetItem(field, i, decoded_item);
+      (void)rc;
+      assert(rc == 0);
+    }
+    assert(PySequence_Check(field));
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "id", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

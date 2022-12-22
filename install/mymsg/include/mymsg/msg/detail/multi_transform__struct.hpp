@@ -51,12 +51,21 @@ struct MultiTransform_
   using _transform_type =
     std::vector<mymsg::msg::Transform_<ContainerAllocator>, typename ContainerAllocator::template rebind<mymsg::msg::Transform_<ContainerAllocator>>::other>;
   _transform_type transform;
+  using _id_type =
+    std::vector<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>, typename ContainerAllocator::template rebind<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>>::other>;
+  _id_type id;
 
   // setters for named parameter idiom
   Type & set__transform(
     const std::vector<mymsg::msg::Transform_<ContainerAllocator>, typename ContainerAllocator::template rebind<mymsg::msg::Transform_<ContainerAllocator>>::other> & _arg)
   {
     this->transform = _arg;
+    return *this;
+  }
+  Type & set__id(
+    const std::vector<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>, typename ContainerAllocator::template rebind<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>>::other> & _arg)
+  {
+    this->id = _arg;
     return *this;
   }
 
@@ -103,6 +112,9 @@ struct MultiTransform_
   bool operator==(const MultiTransform_ & other) const
   {
     if (this->transform != other.transform) {
+      return false;
+    }
+    if (this->id != other.id) {
       return false;
     }
     return true;

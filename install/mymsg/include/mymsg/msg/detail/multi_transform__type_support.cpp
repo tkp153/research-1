@@ -64,7 +64,34 @@ void resize_function__MultiTransform__transform(void * untyped_member, size_t si
   member->resize(size);
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember MultiTransform_message_member_array[1] = {
+size_t size_function__MultiTransform__id(const void * untyped_member)
+{
+  const auto * member = reinterpret_cast<const std::vector<std::string> *>(untyped_member);
+  return member->size();
+}
+
+const void * get_const_function__MultiTransform__id(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::vector<std::string> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__MultiTransform__id(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::vector<std::string> *>(untyped_member);
+  return &member[index];
+}
+
+void resize_function__MultiTransform__id(void * untyped_member, size_t size)
+{
+  auto * member =
+    reinterpret_cast<std::vector<std::string> *>(untyped_member);
+  member->resize(size);
+}
+
+static const ::rosidl_typesupport_introspection_cpp::MessageMember MultiTransform_message_member_array[2] = {
   {
     "transform",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
@@ -79,13 +106,28 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember MultiTransfor
     get_const_function__MultiTransform__transform,  // get_const(index) function pointer
     get_function__MultiTransform__transform,  // get(index) function pointer
     resize_function__MultiTransform__transform  // resize(index) function pointer
+  },
+  {
+    "id",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    true,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(mymsg::msg::MultiTransform, id),  // bytes offset in struct
+    nullptr,  // default value
+    size_function__MultiTransform__id,  // size() function pointer
+    get_const_function__MultiTransform__id,  // get_const(index) function pointer
+    get_function__MultiTransform__id,  // get(index) function pointer
+    resize_function__MultiTransform__id  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers MultiTransform_message_members = {
   "mymsg::msg",  // message namespace
   "MultiTransform",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(mymsg::msg::MultiTransform),
   MultiTransform_message_member_array,  // message members
   MultiTransform_init_function,  // function to initialize message memory (memory has to be allocated)

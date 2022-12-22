@@ -8,11 +8,12 @@ setup.py
 ../../build/chaser_navigation_system/chaser_navigation_system.egg-info/requires.txt
 ../../build/chaser_navigation_system/chaser_navigation_system.egg-info/top_level.txt
 ../../build/chaser_navigation_system/chaser_navigation_system.egg-info/zip-safe
-chaser_navigation_system/3d_pose_analysis.py
 chaser_navigation_system/__init__.py
 chaser_navigation_system/image_cutter.py
 chaser_navigation_system/image_inputer.py
 chaser_navigation_system/pose_tf2.py
+chaser_navigation_system/rgbd_generator.py
+chaser_navigation_system/three_d_pose_analysis.py
 resource/chaser_navigation_system
 test/test_copyright.py
 test/test_flake8.py

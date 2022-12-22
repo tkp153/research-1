@@ -8,6 +8,8 @@ module mymsg {
   module msg {
     struct MultiTransform {
       sequence<mymsg::msg::Transform> transform;
+
+      sequence<string> id;
     };
   };
 };

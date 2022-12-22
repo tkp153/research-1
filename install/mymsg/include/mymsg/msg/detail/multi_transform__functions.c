@@ -14,6 +14,8 @@
 // Include directives for member types
 // Member `transform`
 #include "mymsg/msg/detail/transform__functions.h"
+// Member `id`
+#include "rosidl_runtime_c/string_functions.h"
 
 bool
 mymsg__msg__MultiTransform__init(mymsg__msg__MultiTransform * msg)
@@ -23,6 +25,11 @@ mymsg__msg__MultiTransform__init(mymsg__msg__MultiTransform * msg)
   }
   // transform
   if (!mymsg__msg__Transform__Sequence__init(&msg->transform, 0)) {
+    mymsg__msg__MultiTransform__fini(msg);
+    return false;
+  }
+  // id
+  if (!rosidl_runtime_c__String__Sequence__init(&msg->id, 0)) {
     mymsg__msg__MultiTransform__fini(msg);
     return false;
   }
@@ -37,6 +44,8 @@ mymsg__msg__MultiTransform__fini(mymsg__msg__MultiTransform * msg)
   }
   // transform
   mymsg__msg__Transform__Sequence__fini(&msg->transform);
+  // id
+  rosidl_runtime_c__String__Sequence__fini(&msg->id);
 }
 
 bool
@@ -48,6 +57,12 @@ mymsg__msg__MultiTransform__are_equal(const mymsg__msg__MultiTransform * lhs, co
   // transform
   if (!mymsg__msg__Transform__Sequence__are_equal(
       &(lhs->transform), &(rhs->transform)))
+  {
+    return false;
+  }
+  // id
+  if (!rosidl_runtime_c__String__Sequence__are_equal(
+      &(lhs->id), &(rhs->id)))
   {
     return false;
   }
@@ -65,6 +80,12 @@ mymsg__msg__MultiTransform__copy(
   // transform
   if (!mymsg__msg__Transform__Sequence__copy(
       &(input->transform), &(output->transform)))
+  {
+    return false;
+  }
+  // id
+  if (!rosidl_runtime_c__String__Sequence__copy(
+      &(input->id), &(output->id)))
   {
     return false;
   }

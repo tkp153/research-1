@@ -20,16 +20,32 @@ namespace msg
 namespace builder
 {
 
+class Init_MultiTransform_id
+{
+public:
+  explicit Init_MultiTransform_id(::mymsg::msg::MultiTransform & msg)
+  : msg_(msg)
+  {}
+  ::mymsg::msg::MultiTransform id(::mymsg::msg::MultiTransform::_id_type arg)
+  {
+    msg_.id = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::mymsg::msg::MultiTransform msg_;
+};
+
 class Init_MultiTransform_transform
 {
 public:
   Init_MultiTransform_transform()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::mymsg::msg::MultiTransform transform(::mymsg::msg::MultiTransform::_transform_type arg)
+  Init_MultiTransform_id transform(::mymsg::msg::MultiTransform::_transform_type arg)
   {
     msg_.transform = std::move(arg);
-    return std::move(msg_);
+    return Init_MultiTransform_id(msg_);
   }
 
 private:

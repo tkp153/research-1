@@ -20,11 +20,14 @@ extern "C"
 // Include directives for member types
 // Member 'transform'
 #include "mymsg/msg/detail/transform__struct.h"
+// Member 'id'
+#include "rosidl_runtime_c/string.h"
 
 // Struct defined in msg/MultiTransform in the package mymsg.
 typedef struct mymsg__msg__MultiTransform
 {
   mymsg__msg__Transform__Sequence transform;
+  rosidl_runtime_c__String__Sequence id;
 } mymsg__msg__MultiTransform;
 
 // Struct for a sequence of mymsg__msg__MultiTransform.

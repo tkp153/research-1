@@ -22,7 +22,6 @@ class Image_Input(Node):
         
         # RealSense D435i topic list(RGB data)
         in_topic ="/camera/color/image_raw"
-        out_topic ="human_pose"
         scale = 1.0
         video_qos = rclpy.qos.QoSProfile(depth = 10)
         video_qos.reliability = rclpy.qos.QoSReliabilityPolicy.BEST_EFFORT
@@ -44,14 +43,14 @@ class Image_Input(Node):
         # PUB-SUB
         self.sub = self.create_subscription(Image,in_topic,self.Image_PreProcessor,video_qos)
         
-        self.publish = self.create_publisher(Poses,"two_d_keypoints",10)
+        self.pub = self.create_publisher(Poses,"two_d_keypoints",10)
         
         
     def Image_PreProcessor(self,data):
         
         if(self.count % 4 == 0):
             rgb_image = self.bridge.imgmsg_to_cv2(data,"rgb8")
-            self.Image_Processor(rgb_image)
+            self.Image_Processor(rgb_image,data)
             
         self.count += 1
         '''
@@ -116,7 +115,7 @@ class Image_Input(Node):
         '''
         
         
-    def Image_Processor(self,data):
+    def Image_Processor(self,data,original):
         
         ids = []
         
@@ -165,31 +164,31 @@ class Image_Input(Node):
                 Xmax = max(data_x_max)
                 Ymax = max(data_y_max)
 
-            #　画像拡大処理
-            if(Xmin - 20 > 0):
-                Xmin -= 20
-            else:
-                Xmin = 0
-            if(Ymin - 20 > 0):
-                Ymin -= 20
-            else:
-                Ymin = 0
-            if(Xmax + 20 < width):
-                Xmax += 20
-            else:
-                Xmax = width
-            if(Ymax + 20 < height):
-                Ymax += 20
-            else:
-                Ymax = height
-            #画像トリミング処理
-            cut_image = frame[int(Ymin):int(Ymax),int(Xmin):int(Xmax)]
-            bbox,score,label,keypoints= self.OpenPifPaf_Processor(cut_image,Xmin,Ymin)
-            tracks = self.motpy_track(bbox,score,label)
-            for trc in tracks:
-                id = trc.id
-                ids.append(id)
-                
+                #　画像拡大処理
+                if(Xmin - 20 > 0):
+                    Xmin -= 20
+                else:
+                    Xmin = 0
+                if(Ymin - 20 > 0):
+                    Ymin -= 20
+                else:
+                    Ymin = 0
+                if(Xmax + 20 < width):
+                    Xmax += 20
+                else:
+                    Xmax = width
+                if(Ymax + 20 < height):
+                    Ymax += 20
+                else:
+                    Ymax = height
+            #   画像トリミング処理
+                cut_image = frame[int(Ymin):int(Ymax),int(Xmin):int(Xmax)]
+                bbox,score,label,keypoints= self.OpenPifPaf_Processor(cut_image,Xmin,Ymin)
+                tracks = self.motpy_track(bbox,score,label)
+                for trc in tracks:
+                    id = trc.id[:5]
+                    ids.append(id)
+                self.publish(original.header,keypoints,ids)
                     
             
         
@@ -206,22 +205,23 @@ class Image_Input(Node):
         bbox =[]
         scores = []
         labels = []
-        keypoints_data = []
+        keypoints = []
+        
         
         for p in poses:
             my_coco_box = p['bbox']
-            keypoints = p['keypoints']
+            keypoint = p['keypoints']
+            keypoint = self.keypoints_recover(keypoint,xmin,ymin)
             coco_box = self.xywh_to_xyxy(my_coco_box,xmin, ymin)
-            keypoint = self.keypoints_recover(keypoints,xmin,ymin)
             score = p['score']
-            label = p['labels']
+            label = p['category_id']
             
-            keypoints_data.append(keypoint)
+            keypoints.append(keypoint)
             bbox.append(coco_box)
             scores.append(score)
             labels.append(label)
             
-        return bbox,scores,labels,keypoints_data
+        return bbox,scores,labels,keypoints
             
             
     def xywh_to_xyxy(self,input,xmin,ymin):
@@ -237,8 +237,11 @@ class Image_Input(Node):
         return output
     
     def keypoints_recover(self,keypoints,xmin,ymin):
-        add_data = np.array([xmin,ymin])
-        keypoints_new = np.add(keypoints,add_data)
+        add_data = np.array([xmin,ymin,0])
+        data =np.asarray(keypoints).reshape(-1,3)
+        keypoints_new = data + add_data
+        keypoints_new = np.ravel(keypoints_new)
+        keypoints_new = np.array(keypoints_new,dtype=np.float)
         return keypoints_new
             
     
@@ -260,11 +263,15 @@ class Image_Input(Node):
     def publish(self,header,data,id):
         
         msg = Poses()
+        msg.poses = []
         msg.header.stamp = header.stamp
-        msg.pose = data
+        for i in data:
+            pmsg = Pose()
+            pmsg.keypoints = i.data
+            msg.poses.append(pmsg)
         msg.id = id
         
-        self.publisher.publish(msg)
+        self.pub.publish(msg)
         
 def main():
     

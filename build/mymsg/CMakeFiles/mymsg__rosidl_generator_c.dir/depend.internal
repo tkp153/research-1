@@ -11,6 +11,9 @@ CMakeFiles/mymsg__rosidl_generator_c.dir/rosidl_generator_c/mymsg/msg/detail/mul
  /opt/ros/foxy/include/rcutils/types/rcutils_ret.h
  /opt/ros/foxy/include/rcutils/visibility_control.h
  /opt/ros/foxy/include/rcutils/visibility_control_macros.h
+ /opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
+ /opt/ros/foxy/include/rosidl_runtime_c/string.h
+ /opt/ros/foxy/include/rosidl_runtime_c/string_functions.h
  /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
  /root/research-1/build/mymsg/rosidl_generator_c/mymsg/msg/detail/multi_transform__functions.c
  rosidl_generator_c/mymsg/msg/detail/multi_transform__functions.h

@@ -17,6 +17,8 @@
 #include "mymsg/msg/transform.h"
 // Member `transform`
 #include "mymsg/msg/detail/transform__rosidl_typesupport_introspection_c.h"
+// Member `id`
+#include "rosidl_runtime_c/string_functions.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -70,7 +72,7 @@ bool MultiTransform__rosidl_typesupport_introspection_c__resize_function__Transf
   return mymsg__msg__Transform__Sequence__init(member, size);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember MultiTransform__rosidl_typesupport_introspection_c__MultiTransform_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember MultiTransform__rosidl_typesupport_introspection_c__MultiTransform_message_member_array[2] = {
   {
     "transform",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -85,13 +87,28 @@ static rosidl_typesupport_introspection_c__MessageMember MultiTransform__rosidl_
     MultiTransform__rosidl_typesupport_introspection_c__get_const_function__Transform__transform,  // get_const(index) function pointer
     MultiTransform__rosidl_typesupport_introspection_c__get_function__Transform__transform,  // get(index) function pointer
     MultiTransform__rosidl_typesupport_introspection_c__resize_function__Transform__transform  // resize(index) function pointer
+  },
+  {
+    "id",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    true,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(mymsg__msg__MultiTransform, id),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers MultiTransform__rosidl_typesupport_introspection_c__MultiTransform_message_members = {
   "mymsg__msg",  // message namespace
   "MultiTransform",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(mymsg__msg__MultiTransform),
   MultiTransform__rosidl_typesupport_introspection_c__MultiTransform_message_member_array,  // message members
   MultiTransform__rosidl_typesupport_introspection_c__MultiTransform_init_function,  // function to initialize message memory (memory has to be allocated)
