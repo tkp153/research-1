@@ -1,6 +1,0 @@
-sensor_msgs/Image input_data
-int64 input_count
----
-bool output_cut
-int64 output_count
-sensor_msgs/Image output_data
